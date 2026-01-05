@@ -13,6 +13,7 @@ Features
 ✅ Recent first ordering - Newest/modified tasks appear at the top
 
 Installation
+
 No installation required! Simply:
 Download the project folder
 Open the file index.html in your web browser
