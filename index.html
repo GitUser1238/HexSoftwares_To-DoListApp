@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To-do List</title>
+    <link rel="stylesheet" href="Styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><span class="icon icon-tasks"></span> My To-do List</h1> 
+    </header>
+        
+    <div class="app-content">
+      <div class="input-section">
+        <input type="text" id="todoInput" placeholder="Add a new task...">
+          <button id="addBtn"><span class="icon icon-plus"></span> Add Task</button>
+    </div>
+
+    <!-- Task Statistics -->
+
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-value" id="totalTasks">0</div>
+          <div>Total Tasks</div>
+            </div>
+              <div class="stat-item">
+                <div class="stat-value" id="completedTasks">0</div>
+                <div>Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" id="pendingTasks">0</div>
+                <div>Pending</div>
+              </div>
+    </div>
+            
+     <!-- Filters -->
+      
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All Tasks</button>
+    <button class="filter-btn" data-filter="pending">Pending</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+  </div>
+            
+  <ul class="todo-list" id="todoList">
+  <!-- Todo items will be dynamically added here -->
+  </ul>
+            
+  <div class="empty-state" id="emptyState">
+    <i class="fas fa-clipboard-list"></i>
+    <h3>No tasks yet</h3>
+    <p>Add a task above to get started!</p>
+  </div>
+            
+  <div class="storage-info">
+    <div>Your tasks are automatically saved in your browser</div>
+      <button id="clearStorageBtn">Delete All Tasks</button>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
