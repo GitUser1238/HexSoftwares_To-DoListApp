@@ -19,4 +19,4 @@ Download the project folder
 Open the file index.html in your web browser
 Start managing your tasks!
 
-
+Author: Bupe Nonde - Intern at Hex Softwares
